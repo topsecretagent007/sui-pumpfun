@@ -6,7 +6,7 @@ A fully on-chain experimental token launch and trading platform built on the **S
 
 ## ⚙️ Tech Stack
 
-- **Frontend**: [Next.js](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Frontend**: [Next.js](https://nextjs.org/) + [Javascript](https://www.javascriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Blockchain**: [Sui](https://sui.io/) + [Move](https://move-language.github.io/)
 - **Wallet Integration**: Sui Wallet Adapter
@@ -27,7 +27,7 @@ A fully on-chain experimental token launch and trading platform built on the **S
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/sui-pumpfun.git
+git clone https://github.com/topsecretagent007/sui-pumpfun.git
 cd sui-pumpfun
 
 # Install dependencies
