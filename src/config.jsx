@@ -1,0 +1,23 @@
+// export const RPC_URL = "https://fullnode.testnet.sui.io:443";
+// export const BACKEND_URL = "http://95.216.58.124:7000";
+// export const SCAN_EXPLORER = "https://suiscan.xyz/testnet";
+// export const SOCKET_URL = "http://95.216.58.124:7000";
+
+export const FaqData = [
+  { title: "How to create a token?", content: "To create a token, click on the 'Create Token' button on the homepage. Fill in the required details and submit the form." },
+  { title: "How to buy a token?", content: "To buy a token, go to the 'Buy Token' section, select the token you want to purchase, and follow the instructions." },
+  { title: "How to sell a token?", content: "To sell a token, go to the 'Sell Token' section, select the token you want to sell, and follow the instructions." },
+]
+
+export const TokenList = [
+  { id: 1, name: "Agent S", symbol: "S", img: "https://coral-acute-impala-683.mypinata.cloud/ipfs/bafkreigb6rwcsfuvfpnruwns4lld3ozxges2j3aex6ahtnhy4vkgq53534?pinataGatewayToken=Ut40wS_d5A37n0TDUM6Y7hBjeg_ILnYoEp1bCzBy0yWuGgCobgaL3OOC-iX_MJq-", url: "https://suivision.xyz/coin/0xea65bb5a79ff34ca83e2995f9ff6edd0887b08da9b45bf2e31f930d3efb82866::s::S", address: "0xea65bb5a79ff34ca83e2995f9ff6edd0887b08da9b45bf2e31f930d3efb82866" },
+  { id: 2, name: "SCUBA DOG", symbol: "SCUBA", img: "https://ipfs.io/ipfs/QmcsH2UHUAZSfYk94ZfpZQV1SLGmrjSme8EhH1eByD4CMH", url: "https://suivision.xyz/coin/0x9e6d6124287360cc110044d1f1d7d04a0954eb317c76cf7927244bef0706b113::SCUBA::SCUBA", address: "0x9e6d6124287360cc110044d1f1d7d04a0954eb317c76cf7927244bef0706b113" },
+  { id: 3, name: "SroomAI DAO", symbol: "SHR0", img: "https://suidaos.com/logo/shro.png", url: "https://suivision.xyz/coin/0x16ab6a14d76a90328a6b04f06b0a0ce952847017023624e0c37bf8aa314c39ba::shr::SHR", address: "0x16ab6a14d76a90328a6b04f06b0a0ce952847017023624e0c37bf8aa314c39ba" },
+  { id: 4, name: "STASH ", symbol: "STASH", img: "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/stashdrop.jpg/public", url: "https://suivision.xyz/coin/0x2cff601fe16f622fd6203f8f64bef4e68d687f51f4d06f13c2bbba17cb84c87e::stash::STASH", address: "0x2cff601fe16f622fd6203f8f64bef4e68d687f51f4d06f13c2bbba17cb84c87e" },
+  { id: 5, name: "Suiba Inu", symbol: "SUIB", img: "https://suibacoin.com/suiba.svg", url: "https://suivision.xyz/coin/0xed4504e791e1dad7bf93b41e089b4733c27f35fde505693e18186c2ba8e2e14b::suib::SUIB", address: "0xed4504e791e1dad7bf93b41e089b4733c27f35fde505693e18186c2ba8e2e14b" },
+  { id: 6, name: "Suilama ", symbol: "SUILAMA", img: "https://api.movepump.com/uploads/1000030596_8a14750351.jpg", url: "https://suivision.xyz/coin/0x5a4f64079daed04d923c93f3ac4ee04b637e5b3ea2db87d591981c1049508a27::suilama::SUILAMA", address: "0x5a4f64079daed04d923c93f3ac4ee04b637e5b3ea2db87d591981c1049508a27" },
+  { id: 7, name: "SUI TRUMP ", symbol: "SUITRUMP", img: "https://api.movepump.com/uploads/4fa877d1_e15e_4725_bf83_af59ecf40afa_503e5cc707.jpeg", url: "https://suivision.xyz/coin/0xdeb831e796f16f8257681c0d5d4108fa94333060300b2459133a96631bf470b8::suitrump::SUITRUMP", address: "0xdeb831e796f16f8257681c0d5d4108fa94333060300b2459133a96631bf470b8" },
+  { id: 8, name: "Uni  ", symbol: "Uni ", img: "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/logo_uni.png/public", url: "https://suivision.xyz/coin/0xaf9e228fd0292e2a27b4859bc57a2f3a9faedb9341b6307c84fef163e44790cc::uni::UNI", address: "0xaf9e228fd0292e2a27b4859bc57a2f3a9faedb9341b6307c84fef163e44790cc" },
+  { id: 9, name: "BLUB  ", symbol: "BLUB ", img: "https://coral-acute-impala-683.mypinata.cloud/ipfs/bafkreifbvyq4wfpib5exivezyzjlpdtmvff5fgfiz6ygv5dlbjknz5gjqy?pinataGatewayToken=Ut40wS_d5A37n0TDUM6Y7hBjeg_ILnYoEp1bCzBy0yWuGgCobgaL3OOC-iX_MJq-", url: "https://suivision.xyz/coin/0xfa7ac3951fdca92c5200d468d31a365eb03b2be9936fde615e69f0c1274ad3a0::BLUB::BLUB", address: "0xfa7ac3951fdca92c5200d468d31a365eb03b2be9936fde615e69f0c1274ad3a0" },
+  { id: 10, name: "FUD", symbol: "FUD", img: "https://imagedelivery.net/cBNDGgkrsEA-b_ixIp9SkQ/fud.png/public", url: "https://suivision.xyz/coin/0x76cb819b01abed502bee8a702b4c2d547532c12f25001c9dea795a5e631c26f1::fud::FUD", address: "0x76cb819b01abed502bee8a702b4c2d547532c12f25001c9dea795a5e631c26f1" },
+];

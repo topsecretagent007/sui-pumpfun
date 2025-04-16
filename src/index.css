@@ -1,0 +1,306 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --height: 100vh;
+}
+
+html,
+body {
+  font-size: 1rem;
+  background-color: #0A0A0A;
+  color: #F3F3F3;
+  font-family: 'CabinetGrotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'MyCustomFont' !important;
+  src: url('./../public/images/JUGGLERdemo.ttf') format('truetype') !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background: #000/0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000/0;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #784FD8;
+  border-radius: 5px;
+}
+
+.tradeLabel {
+  background-color: transparent !important;
+}
+
+.container {
+  max-width: 1300px;
+  /* @apply minW1600:!max-w-[85%]; */
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 92%;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .containerOnLarge {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+section {
+  padding: 80px 0;
+}
+
+.clamp-1 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.clamp-3 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-select-container {
+  position: relative;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+.connect_wallet {
+  background-color: #4DA2FF !important;
+  display: flex;
+  justify-content: center;
+  padding: 5px 7px;
+  gap: 7.59px;
+  font-weight: 700;
+  color: black !important;
+  font-size: 24.65px;
+  /* width: 137.7px!important; */
+  height: 35px;
+  border-radius: 5.33px !important;
+  border: 2.78px solid black !important;
+  gap: 4.74px;
+  box-shadow: 2.96px 2.96px;
+}
+
+.potential-topic {
+  font-family: 'JUGGLER', sans-serif;
+  line-height: 121.09px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.custom-select-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  /* Lebar diatur ke 0 untuk membuat segitiga */
+  height: 0;
+  /* Tinggi diatur ke 0 untuk membuat segitiga */
+  border-left: 6px solid transparent;
+  /* Sisi kiri transparan */
+  border-right: 6px solid transparent;
+  /* Sisi kanan transparan */
+  border-top: 6px solid white;
+  /* Sisi atas berwarna untuk membentuk segitiga ke bawah */
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.custom-select-container.open::after {
+  transform: translateY(-50%) rotate(-180deg);
+  /* Rotate arrow on open */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  border-radius: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333333;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 100px;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 100%;
+}
+
+.switch input:checked+.slider {
+  background-color: #A9E6BD;
+}
+
+.switch input:focus+.slider {
+  box-shadow: 0 0 1px #A9E6BD;
+}
+
+.switch input:checked+.slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.modalWrap .modal-dialog .modal-content {
+  background-color: #1F1F1F;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  box-shadow: 0px 40px 28px rgba(35, 35, 35, 0.04);
+}
+
+.customTurnstile iframe {
+  width: 100% !important;
+  /* Paksa iframe untuk mengambil lebar penuh */
+  display: block;
+  /* Pastikan iframe mengambil ruang penuh */
+}
+
+.customWidthProfile {
+  max-width: 610px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(40px);
+    /* Move to the right */
+  }
+
+  40% {
+    transform: translateX(0);
+    /* Move to the right */
+  }
+
+  60% {
+    transform: translateX(40px);
+    /* Move to the right */
+  }
+
+  80% {
+    transform: translateX(-20px);
+    /* Move to the right */
+  }
+
+  100% {
+    transform: translateX(0);
+    /* Return to original position */
+  }
+}
+
+
+/* Slider thumb */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #FFD700;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  transform: translateY(-8px);
+  /* This will move the thumb up */
+  box-shadow: 0 0 0 2px #000;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #FFD700;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  z-index: 3;
+  transform: translateY(-8px);
+  /* This will move the thumb up */
+  box-shadow: 0 0 0 2px #000;
+}
+
+/* Slider track fill */
+.slider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #FFD700 0%, #FFD700 var(--value, 50%), #333 var(--value, 50%), #333 100%);
+  height: 4px;
+  border-radius: 2px;
+}
+
+.flex-shrink-0>div {
+  background-color: #000;
+}
+
+
