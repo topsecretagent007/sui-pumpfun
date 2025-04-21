@@ -1,7 +1,3 @@
-// export const RPC_URL = "https://fullnode.testnet.sui.io:443";
-// export const BACKEND_URL = "http://95.216.58.124:7000";
-// export const SCAN_EXPLORER = "https://suiscan.xyz/testnet";
-// export const SOCKET_URL = "http://95.216.58.124:7000";
 
 export const FaqData = [
   { title: "How to create a token?", content: "To create a token, click on the 'Create Token' button on the homepage. Fill in the required details and submit the form." },
