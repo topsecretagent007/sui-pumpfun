@@ -66,7 +66,7 @@ sui client publish --path ./contracts --gas-budget 100000000
 
 ## 📬 Contact
 
-For questions or collaborations, reach out via Telegram: @topsecretagnt_007[https://t.me/topsecretagent_007]
+For questions or collaborations, reach out via Telegram: [@topsecretagnt_007](https://t.me/topsecretagent_007)
 
 ---
 
