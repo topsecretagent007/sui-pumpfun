@@ -1,4 +1,4 @@
-# 🧪 Sui Pump.fun
+# 🧪 Sui.fun
 
 A fully on-chain experimental token launch and trading platform built on the **Sui blockchain**, inspired by Pump.fun. Users can **connect wallets, create tokens**, and **buy/sell tokens** instantly. The project combines a modern frontend with a Move-based smart contract backend.
 
